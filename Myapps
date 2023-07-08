@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo " " >> /var/log/ATech.log
+date >> /var/log/ATech.log
+echo "Updating apt..." && sudo apt-get update
+echo "Installing Stress..." && sudo apt-get install stress -y
+echo "Completed at..." && date >> /var/log/ATech.log
